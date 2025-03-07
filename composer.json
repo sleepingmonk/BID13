@@ -1,0 +1,24 @@
+{
+    "name": "calvintyndall/bid13quiz",
+    "description": "PHP developer quiz code.",
+    "type": "project",
+    "require": {
+        "telesign/telesign": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Calvintyndall\\Bid13quiz\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Calvin Tyndall"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "php src/phoneId/isValid.php --help",
+            "php src/scatterPlot/scatterPlot.php --help"
+        ]
+    }
+}
